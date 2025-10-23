@@ -39,9 +39,9 @@
 
 ---
 
-## 🖼️ Moodboard
+## 🖼️🎨 Moodboard
 
-| Вдохновение | Вайб |
+| Вдохновение |
 |--------------|------|
 | ![Moodboard 1](https://github.com/user-attachments/assets/c191a339-e6df-4ed0-95ba-0638624c7685)
 
