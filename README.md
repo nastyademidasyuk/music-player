@@ -69,6 +69,7 @@ https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mt
 
 ---
 ## Структура проекта (Модельная архитектура):
+
 src/
 ├─ modules/
 │  ├─ landing/                      // Стартовая страница с анимацией
@@ -86,7 +87,7 @@ src/
 │  │  │  ├─ RegisterForm.jsx
 │  │  │  └─ ConfirmCodeForm.jsx     // Подтверждение email-кода
 │  │  ├─ services/
-│  │  │  └─ authApi.js              // login, register, confirmCode
+│  │  │  └─ authApi.js              // login / register / confirmCode
 │  │  └─ hooks/
 │  │     └─ useAuth.js              // Работа с JWT и localStorage
 │  │
@@ -157,6 +158,5 @@ src/
 │  │  └─ Modal.jsx
 │  └─ utils/
 │     └─ helpers.js
-
 
 ✨ ～♩～♬～♩～♬～♩～♬～♩～⚡
