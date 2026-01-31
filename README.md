@@ -69,59 +69,58 @@ https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mt
 
 ---
 ## Структура проекта (Модельная архитектура):
-
 src/
 ├─ modules/
-│  ├─ landing/                      // Стартовая страница с анимацией
+│  ├─ landing/
 │  │  ├─ pages/
-│  │  │  └─ LandingPage.jsx         // Проверка токена и редирект
+│  │  │  └─ LandingPage.jsx
 │  │  └─ components/
-│  │     └─ Loader.jsx              // Анимация загрузки
+│  │     └─ Loader.jsx
 │  │
-│  ├─ auth/                         // Авторизация и регистрация
+│  ├─ auth/
 │  │  ├─ pages/
 │  │  │  ├─ LoginPage.jsx
 │  │  │  └─ RegisterPage.jsx
 │  │  ├─ components/
 │  │  │  ├─ LoginForm.jsx
 │  │  │  ├─ RegisterForm.jsx
-│  │  │  └─ ConfirmCodeForm.jsx     // Подтверждение email-кода
+│  │  │  └─ ConfirmCodeForm.jsx
 │  │  ├─ services/
-│  │  │  └─ authApi.js              // login / register / confirmCode
+│  │  │  └─ authApi.js
 │  │  └─ hooks/
-│  │     └─ useAuth.js              // Работа с JWT и localStorage
+│  │     └─ useAuth.js
 │  │
-│  ├─ music/                        // Музыка, жанры, альбомы
+│  ├─ music/
 │  │  ├─ pages/
-│  │  │  └─ HomePage.jsx            // Главная страница
+│  │  │  └─ HomePage.jsx
 │  │  ├─ components/
 │  │  │  ├─ TrackList.jsx
 │  │  │  ├─ TrackItem.jsx
 │  │  │  ├─ GenreList.jsx
 │  │  │  └─ AlbumList.jsx
 │  │  ├─ services/
-│  │  │  └─ musicApi.js             // Получение треков и жанров
+│  │  │  └─ musicApi.js
 │  │  └─ hooks/
-│  │     └─ useMusic.js             // Загрузка и управление данными
+│  │     └─ useMusic.js
 │  │
-│  ├─ player/                       // Музыкальный плеер
+│  ├─ player/
 │  │  ├─ components/
-│  │  │  ├─ AudioPlayer.jsx         // HTML5 Audio
-│  │  │  └─ PlayerControls.jsx      // Play / Pause / Volume
+│  │  │  ├─ AudioPlayer.jsx
+│  │  │  └─ PlayerControls.jsx
 │  │  └─ hooks/
-│  │     └─ usePlayer.js            // Логика плеера
+│  │     └─ usePlayer.js
 │  │
-│  ├─ library/                      // Моя медиатека
+│  ├─ library/
 │  │  ├─ pages/
 │  │  │  └─ LibraryPage.jsx
 │  │  ├─ components/
 │  │  │  └─ LibraryList.jsx
 │  │  ├─ services/
-│  │  │  └─ libraryApi.js           // Работа с медиатекой
+│  │  │  └─ libraryApi.js
 │  │  └─ hooks/
-│  │     └─ useLibrary.js           // localStorage / API
+│  │     └─ useLibrary.js
 │  │
-│  ├─ search/                       // Поиск музыки
+│  ├─ search/
 │  │  ├─ components/
 │  │  │  ├─ SearchBar.jsx
 │  │  │  └─ SearchResults.jsx
@@ -130,7 +129,7 @@ src/
 │  │  └─ hooks/
 │  │     └─ useSearch.js
 │  │
-│  ├─ profile/                      // Профиль и настройки
+│  ├─ profile/
 │  │  ├─ pages/
 │  │  │  └─ ProfilePage.jsx
 │  │  ├─ components/
@@ -140,23 +139,24 @@ src/
 │  │  └─ hooks/
 │  │     └─ useProfile.js
 │  │
-│  └─ pro/                          // PRO-подписка
+│  └─ pro/
 │     ├─ components/
 │     │  └─ BuyProButton.jsx
 │     └─ services/
 │        └─ paymentApi.js
 │
 ├─ router/
-│  └─ router.js                     // Все маршруты приложения
+│  └─ router.js
 │
-├─ shared/                          // Общие части
+├─ shared/
 │  ├─ api/
-│  │  └─ apiClient.js               // Общий API-клиент
+│  │  └─ apiClient.js
 │  ├─ ui/
 │  │  ├─ Button.jsx
 │  │  ├─ Input.jsx
 │  │  └─ Modal.jsx
 │  └─ utils/
 │     └─ helpers.js
+
 
 ✨ ～♩～♬～♩～♬～♩～♬～♩～⚡
