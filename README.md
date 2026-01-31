@@ -72,56 +72,56 @@ https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mt
 <pre style="white-space: pre-wrap; word-break: break-word;">
 src/
 ├─ modules/
-│  ├─ landing/                      // Стартовая страница с анимацией
+│  ├─ landing/                      / Стартовая страница с анимацией
 │  │  ├─ pages/
-│  │  │  └─ LandingPage.jsx         // Проверка токена и редирект
+│  │  │  └─ LandingPage.jsx         / Проверка токена и редирект
 │  │  └─ components/
-│  │     └─ Loader.jsx              // Анимация загрузки
+│  │     └─ Loader.jsx              / Анимация загрузки
 │  │
-│  ├─ auth/                         // Авторизация и регистрация
+│  ├─ auth/                         / Авторизация и регистрация
 │  │  ├─ pages/
 │  │  │  ├─ LoginPage.jsx
 │  │  │  └─ RegisterPage.jsx
 │  │  ├─ components/
 │  │  │  ├─ LoginForm.jsx
 │  │  │  ├─ RegisterForm.jsx
-│  │  │  └─ ConfirmCodeForm.jsx     // Подтверждение email-кода
+│  │  │  └─ ConfirmCodeForm.jsx     / Подтверждение email-кода
 │  │  ├─ services/
-│  │  │  └─ authApi.js              // login, register, confirmCode
+│  │  │  └─ authApi.js              / login, register, confirmCode
 │  │  └─ hooks/
-│  │     └─ useAuth.js              // Работа с JWT и localStorage
+│  │     └─ useAuth.js              / Работа с JWT и localStorage
 │  │
-│  ├─ music/                        // Музыка, жанры, альбомы
+│  ├─ music/                        / Музыка, жанры, альбомы
 │  │  ├─ pages/
-│  │  │  └─ HomePage.jsx            // Главная страница
+│  │  │  └─ HomePage.jsx            / Главная страница
 │  │  ├─ components/
 │  │  │  ├─ TrackList.jsx
 │  │  │  ├─ TrackItem.jsx
 │  │  │  ├─ GenreList.jsx
 │  │  │  └─ AlbumList.jsx
 │  │  ├─ services/
-│  │  │  └─ musicApi.js             // Получение треков и жанров
+│  │  │  └─ musicApi.js             / Получение треков и жанров
 │  │  └─ hooks/
-│  │     └─ useMusic.js             // Загрузка и управление данными
+│  │     └─ useMusic.js             / Загрузка и управление данными
 │  │
-│  ├─ player/                       // Музыкальный плеер
+│  ├─ player/                       / Музыкальный плеер
 │  │  ├─ components/
-│  │  │  ├─ AudioPlayer.jsx         // HTML5 Audio
-│  │  │  └─ PlayerControls.jsx      // Play / Pause / Volume
+│  │  │  ├─ AudioPlayer.jsx         / HTML5 Audio
+│  │  │  └─ PlayerControls.jsx      / Play / Pause / Volume
 │  │  └─ hooks/
-│  │     └─ usePlayer.js            // Логика плеера
+│  │     └─ usePlayer.js            / Логика плеера
 │  │
-│  ├─ library/                      // Моя медиатека
+│  ├─ library/                      / Моя медиатека
 │  │  ├─ pages/
 │  │  │  └─ LibraryPage.jsx
 │  │  ├─ components/
 │  │  │  └─ LibraryList.jsx
 │  │  ├─ services/
-│  │  │  └─ libraryApi.js           // Работа с медиатекой
+│  │  │  └─ libraryApi.js           / Работа с медиатекой
 │  │  └─ hooks/
-│  │     └─ useLibrary.js           // localStorage / API
+│  │     └─ useLibrary.js           / localStorage / API
 │  │
-│  ├─ search/                       // Поиск музыки
+│  ├─ search/                       / Поиск музыки
 │  │  ├─ components/
 │  │  │  ├─ SearchBar.jsx
 │  │  │  └─ SearchResults.jsx
@@ -130,7 +130,7 @@ src/
 │  │  └─ hooks/
 │  │     └─ useSearch.js
 │  │
-│  ├─ profile/                      // Профиль и настройки
+│  ├─ profile/                      / Профиль и настройки
 │  │  ├─ pages/
 │  │  │  └─ ProfilePage.jsx
 │  │  ├─ components/
@@ -140,18 +140,18 @@ src/
 │  │  └─ hooks/
 │  │     └─ useProfile.js
 │  │
-│  └─ pro/                          // PRO-подписка
+│  └─ pro/                          / PRO-подписка
 │     ├─ components/
 │     │  └─ BuyProButton.jsx
 │     └─ services/
 │        └─ paymentApi.js
 │
 ├─ router/
-│  └─ router.js                     // Все маршруты приложения
+│  └─ router.js                     / Все маршруты приложения
 │
-├─ shared/                          // Общие части
+├─ shared/                          / Общие части
 │  ├─ api/
-│  │  └─ apiClient.js               // Общий API-клиент
+│  │  └─ apiClient.js               / Общий API-клиент
 │  ├─ ui/
 │  │  ├─ Button.jsx
 │  │  ├─ Input.jsx
