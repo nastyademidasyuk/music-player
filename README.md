@@ -68,7 +68,7 @@
 https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mtBww
 
 ---
-## Структура проекта (Модульная feature-based архитектура):
+## Структура проекта (Модульная архитектура):
 <pre style="white-space: pre-wrap; word-break: break-word;">
 src/
 ├─ modules/
