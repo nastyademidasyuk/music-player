@@ -72,11 +72,11 @@ https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mt
 <pre style="white-space: pre-wrap; word-break: break-word;">
 src/
 ├─ modules/
-│  ├─ landing/                   / Стартовая страница
+│  ├─ landing/                  
 │  │  ├─ pages/
 │  │  │  └─ LandingPage.jsx      / Проверка токена + редирект
 │  │  └─ components/
-│  │     └─ Loader.jsx           / Анимация загрузки
+│  │     └─ Loader.jsx           
 │  │
 │  ├─ auth/                      / Авторизация и регистрация
 │  │  ├─ pages/
@@ -85,11 +85,11 @@ src/
 │  │  ├─ components/
 │  │  │  ├─ LoginForm.jsx
 │  │  │  ├─ RegisterForm.jsx
-│  │  │  └─ ConfirmCodeForm.jsx  / Подтверждение email-кода
+│  │  │  └─ ConfirmCodeForm.jsx  
 │  │  ├─ hooks/
 │  │  │  └─ useAuth.js           / JWT, localStorage
 │  │  └─ services/
-│  │     └─ authApi.js           / login / register / confirmCode
+│  │     └─ authApi.js           / register / confirmCode
 │  │
 │  ├─ music/                     / Музыка, жанры, альбомы
 │  │  ├─ pages/
@@ -104,12 +104,12 @@ src/
 │  │  └─ services/
 │  │     └─ musicApi.js
 │  │
-│  ├─ player/                    / Музыкальный плеер
+│  ├─ player/                    
 │  │  ├─ components/
 │  │  │  ├─ AudioPlayer.jsx
 │  │  │  └─ PlayerControls.jsx
 │  │  └─ hooks/
-│  │     └─ usePlayer.js         / Логика плеера
+│  │     └─ usePlayer.js         
 │  │
 │  ├─ library/                   / Моя медиатека
 │  │  ├─ pages/
@@ -121,7 +121,7 @@ src/
 │  │  └─ services/
 │  │     └─ libraryApi.js
 │  │
-│  ├─ search/                    / Поиск музыки
+│  ├─ search/                    
 │  │  ├─ components/
 │  │  │  ├─ SearchBar.jsx
 │  │  │  └─ SearchResults.jsx
@@ -140,7 +140,7 @@ src/
 │  │  └─ services/
 │  │     └─ profileApi.js
 │  │
-│  └─ pro/                       / PRO-подписка
+│  └─ pro/                       
 │     ├─ components/
 │     │  └─ BuyProButton.jsx
 │     └─ services/
@@ -149,7 +149,7 @@ src/
 ├─ router/
 │  └─ router.js                  / Все маршруты приложения
 
-├─ shared/                       / Общие вещи
+├─ shared/                       / Общее
 │  ├─ api/
 │  │  └─ apiClient.js
 │  ├─ ui/
