@@ -69,6 +69,7 @@ https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mt
 
 ---
 ## Структура проекта (Модельная архитектура):
+<pre style="white-space: pre-wrap; word-break: break-word;">
 src/
 ├─ modules/
 │  ├─ landing/                      # Стартовая страница с анимацией
@@ -76,7 +77,7 @@ src/
 │  │  │  └─ LandingPage.jsx         # Проверка токена и редирект
 │  │  └─ components/
 │  │     └─ Loader.jsx              # Анимация загрузки
-│  │
+│
 │  ├─ auth/                         # Авторизация и регистрация
 │  │  ├─ pages/
 │  │  │  ├─ LoginPage.jsx
@@ -89,37 +90,37 @@ src/
 │  │  │  └─ authApi.js              # login / register / confirmCode
 │  │  └─ hooks/
 │  │     └─ useAuth.js              # JWT и localStorage
-│  │
+│
 │  ├─ music/                        # Музыка, жанры, альбомы
 │  │  ├─ pages/
-│  │  │  └─ HomePage.jsx            # Главная страница
+│  │  │  └─ HomePage.jsx
 │  │  ├─ components/
 │  │  │  ├─ TrackList.jsx
 │  │  │  ├─ TrackItem.jsx
 │  │  │  ├─ GenreList.jsx
 │  │  │  └─ AlbumList.jsx
 │  │  ├─ services/
-│  │  │  └─ musicApi.js             # Треки и жанры
+│  │  │  └─ musicApi.js
 │  │  └─ hooks/
-│  │     └─ useMusic.js             # Управление данными
-│  │
+│  │     └─ useMusic.js
+│
 │  ├─ player/                       # Музыкальный плеер
 │  │  ├─ components/
-│  │  │  ├─ AudioPlayer.jsx         # HTML5 Audio
-│  │  │  └─ PlayerControls.jsx      # Play / Pause / Volume
+│  │  │  ├─ AudioPlayer.jsx
+│  │  │  └─ PlayerControls.jsx
 │  │  └─ hooks/
-│  │     └─ usePlayer.js            # Логика плеера
-│  │
+│  │     └─ usePlayer.js
+│
 │  ├─ library/                      # Моя медиатека
 │  │  ├─ pages/
 │  │  │  └─ LibraryPage.jsx
 │  │  ├─ components/
 │  │  │  └─ LibraryList.jsx
 │  │  ├─ services/
-│  │  │  └─ libraryApi.js           # Работа с медиатекой
+│  │  │  └─ libraryApi.js
 │  │  └─ hooks/
 │  │     └─ useLibrary.js
-│  │
+│
 │  ├─ search/                       # Поиск музыки
 │  │  ├─ components/
 │  │  │  ├─ SearchBar.jsx
@@ -128,7 +129,7 @@ src/
 │  │  │  └─ searchApi.js
 │  │  └─ hooks/
 │  │     └─ useSearch.js
-│  │
+│
 │  ├─ profile/                      # Профиль и настройки
 │  │  ├─ pages/
 │  │  │  └─ ProfilePage.jsx
@@ -138,7 +139,7 @@ src/
 │  │  │  └─ profileApi.js
 │  │  └─ hooks/
 │  │     └─ useProfile.js
-│  │
+│
 │  └─ pro/                          # PRO-подписка
 │     ├─ components/
 │     │  └─ BuyProButton.jsx
@@ -150,12 +151,14 @@ src/
 │
 ├─ shared/                          # Общие модули
 │  ├─ api/
-│  │  └─ apiClient.js               # Общий API-клиент
+│  │  └─ apiClient.js
 │  ├─ ui/
 │  │  ├─ Button.jsx
 │  │  ├─ Input.jsx
 │  │  └─ Modal.jsx
 │  └─ utils/
 │     └─ helpers.js
+</pre>
+
 
 ✨ ～♩～♬～♩～♬～♩～♬～♩～⚡
