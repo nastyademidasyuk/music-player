@@ -68,96 +68,97 @@
 https://1drv.ms/w/c/b1c783ed48c4e249/EUszg1vq5G9EkJqoZjJxcFEBLh-8WG73MH83pkR10mtBww
 
 ---
-## Структура проекта (Модельная архитектура):
+## Структура проекта (Модульная feature-based архитектура):
 <pre style="white-space: pre-wrap; word-break: break-word;">
 src/
 ├─ modules/
-│  ├─ landing/                      / Стартовая страница с анимацией
+│  ├─ landing/                   / Стартовая страница
 │  │  ├─ pages/
-│  │  │  └─ LandingPage.jsx         / Проверка токена и редирект
+│  │  │  └─ LandingPage.jsx      / Проверка токена + редирект
 │  │  └─ components/
-│  │     └─ Loader.jsx              / Анимация загрузки
+│  │     └─ Loader.jsx           / Анимация загрузки
 │  │
-│  ├─ auth/                         / Авторизация и регистрация
+│  ├─ auth/                      / Авторизация и регистрация
 │  │  ├─ pages/
 │  │  │  ├─ LoginPage.jsx
 │  │  │  └─ RegisterPage.jsx
 │  │  ├─ components/
 │  │  │  ├─ LoginForm.jsx
 │  │  │  ├─ RegisterForm.jsx
-│  │  │  └─ ConfirmCodeForm.jsx     / Подтверждение email-кода
-│  │  ├─ services/
-│  │  │  └─ authApi.js              / login, register, confirmCode
-│  │  └─ hooks/
-│  │     └─ useAuth.js              / Работа с JWT и localStorage
+│  │  │  └─ ConfirmCodeForm.jsx  / Подтверждение email-кода
+│  │  ├─ hooks/
+│  │  │  └─ useAuth.js           / JWT, localStorage
+│  │  └─ services/
+│  │     └─ authApi.js           / login / register / confirmCode
 │  │
-│  ├─ music/                        / Музыка, жанры, альбомы
+│  ├─ music/                     / Музыка, жанры, альбомы
 │  │  ├─ pages/
-│  │  │  └─ HomePage.jsx            / Главная страница
+│  │  │  └─ HomePage.jsx
 │  │  ├─ components/
 │  │  │  ├─ TrackList.jsx
 │  │  │  ├─ TrackItem.jsx
 │  │  │  ├─ GenreList.jsx
 │  │  │  └─ AlbumList.jsx
-│  │  ├─ services/
-│  │  │  └─ musicApi.js             / Получение треков и жанров
-│  │  └─ hooks/
-│  │     └─ useMusic.js             / Загрузка и управление данными
+│  │  ├─ hooks/
+│  │  │  └─ useMusic.js          / Загрузка треков и жанров
+│  │  └─ services/
+│  │     └─ musicApi.js
 │  │
-│  ├─ player/                       / Музыкальный плеер
+│  ├─ player/                    / Музыкальный плеер
 │  │  ├─ components/
-│  │  │  ├─ AudioPlayer.jsx         / HTML5 Audio
-│  │  │  └─ PlayerControls.jsx      / Play / Pause / Volume
+│  │  │  ├─ AudioPlayer.jsx
+│  │  │  └─ PlayerControls.jsx
 │  │  └─ hooks/
-│  │     └─ usePlayer.js            / Логика плеера
+│  │     └─ usePlayer.js         / Логика плеера
 │  │
-│  ├─ library/                      / Моя медиатека
+│  ├─ library/                   / Моя медиатека
 │  │  ├─ pages/
 │  │  │  └─ LibraryPage.jsx
 │  │  ├─ components/
 │  │  │  └─ LibraryList.jsx
-│  │  ├─ services/
-│  │  │  └─ libraryApi.js           / Работа с медиатекой
-│  │  └─ hooks/
-│  │     └─ useLibrary.js           / localStorage / API
+│  │  ├─ hooks/
+│  │  │  └─ useLibrary.js
+│  │  └─ services/
+│  │     └─ libraryApi.js
 │  │
-│  ├─ search/                       / Поиск музыки
+│  ├─ search/                    / Поиск музыки
 │  │  ├─ components/
 │  │  │  ├─ SearchBar.jsx
 │  │  │  └─ SearchResults.jsx
-│  │  ├─ services/
-│  │  │  └─ searchApi.js
-│  │  └─ hooks/
-│  │     └─ useSearch.js
+│  │  ├─ hooks/
+│  │  │  └─ useSearch.js
+│  │  └─ services/
+│  │     └─ searchApi.js
 │  │
-│  ├─ profile/                      / Профиль и настройки
+│  ├─ profile/                   / Профиль и настройки
 │  │  ├─ pages/
 │  │  │  └─ ProfilePage.jsx
 │  │  ├─ components/
 │  │  │  └─ ProfileSettings.jsx
-│  │  ├─ services/
-│  │  │  └─ profileApi.js
-│  │  └─ hooks/
-│  │     └─ useProfile.js
+│  │  ├─ hooks/
+│  │  │  └─ useProfile.js
+│  │  └─ services/
+│  │     └─ profileApi.js
 │  │
-│  └─ pro/                          / PRO-подписка
+│  └─ pro/                       / PRO-подписка
 │     ├─ components/
 │     │  └─ BuyProButton.jsx
 │     └─ services/
 │        └─ paymentApi.js
-│
+
 ├─ router/
-│  └─ router.js                     / Все маршруты приложения
-│
-├─ shared/                          / Общие части
+│  └─ router.js                  / Все маршруты приложения
+
+├─ shared/                       / Общие вещи
 │  ├─ api/
-│  │  └─ apiClient.js               / Общий API-клиент
+│  │  └─ apiClient.js
 │  ├─ ui/
 │  │  ├─ Button.jsx
 │  │  ├─ Input.jsx
 │  │  └─ Modal.jsx
 │  └─ utils/
 │     └─ helpers.js
+
 </pre>
 
 
