@@ -5,6 +5,7 @@ export function getLibrary() {
 }
 export function clearLibrary() {
     return apiClient("/api/library", {
-        method: "удалить",
+        method: "DELETE",
     });
+
 }
