@@ -16,16 +16,17 @@ export function getArtistTopTracks(artistId) {
 
 export function addTrackToLibrary(trackId) {
     return apiClient("/api/library", {
-        method: "пост",
+        method: "POST",
         body: JSON.stringify({ trackId }),
     });
 }
 
 export function removeTrackFromLibrary(trackId) {
     return apiClient(`/api/library/${trackId}`, {
-        method: "удалить",
+        method: "DELETE",
     });
 }
 export function getPopularTrack() {
     return apiClient(`${DEEZER_BASE_URL}/track/3135556`);
+
 }
