@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Landing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="search-bar">
+    <input type="text" placeholder="Поиск..." />
+  </div>
+  <button class="btn-add">Искать</button>
+  <div class="settings-btn">⚙</div>
+</header>
+
+<main class="container">
+
+  <aside class="genres">
+    <h2>ЖАНРЫ</h2>
+    <ul>
+      <li>Pop</li>
+      <li>Rock</li>
+      <li>Metal</li>
+      <li>Jazz</li>
+      <li>Hip-hop</li>
+      <li>Electronic</li>
+      <li>Techno</li>
+      <li>Trance</li>
+    </ul>
+  </aside>
+
+  <section class="recommendations">
+    <h2>Рекомендации</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/linkin.jpg" alt="Linkin Park">
+      </div>
+      <div class="card">
+        <img src="images/negative.jpg" alt="Negative">
+      </div>
+      <div class="card">
+        <img src="images/night.jpg" alt="Night">
+      </div>
+      <div class="card">
+        <img src="images/система.jpg" alt="Система">
+      </div>
+    </div>
+
+    <button class="btn-more">Больше</button>
+    <button class="btn-library">Моя медиатека</button>
+  </section>
+
+  <aside class="groups">
+    <h2>ГРУППЫ</h2>
+    <ul>
+      <li>Mayhem</li>
+      <li>Darkthrone</li>
+      <li>Burzum</li>
+      <li>Nightwish</li>
+      <li>Epica</li>
+      <li>Within Temptation</li>
+      <li>Therion</li>
+    </ul>
+  </aside>
+
+</main>
+
+<div class="now-playing">
+  <div class="track-cover">
+    <img src="images/numb.jpg" alt="Linkin Park — Numb">
+    <div class="player-hover">
+      <input type="range" min="0" max="100" value="35">
+    </div>
+  </div>
+
+  <div class="track-info">
+    <span class="dot"></span>
+    <span class="text">Сейчас играет</span>
+    <span class="track-name">Linkin Park — Numb</span>
+  </div>
+</div>
+
+</body>
+</html>
