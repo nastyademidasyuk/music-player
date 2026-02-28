@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: url("images/fon3.jpg") no-repeat center center fixed;
+    background: url("images/fon7.jpg") no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     min-height: 100vh;
@@ -18,7 +18,22 @@ body {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    padding: 30px 20px;
+
+    margin: 30px auto;
+    padding: 20px 35px;
+
+    width: fit-content;
+
+    background: rgba(20, 0, 40, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 40px;
+    border: 1px solid rgba(255, 0, 204, 0.3);
+
+    box-shadow:
+            0 0 40px rgba(255, 0, 204, 0.25),
+            inset 0 0 30px rgba(255, 0, 204, 0.08);
 }
 
 .search-bar {
@@ -196,11 +211,27 @@ body {
 
 .now-playing {
     position: fixed;
-    bottom: 15px;
-    left: 25px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+
+    padding: 18px 30px;
+
+    background: rgba(20, 0, 40, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 30px;
+    border: 1px solid rgba(255, 0, 204, 0.3);
+
+    box-shadow:
+            0 0 40px rgba(255, 0, 204, 0.25),
+            inset 0 0 30px rgba(255, 0, 204, 0.08);
+
     z-index: 100;
 }
 
@@ -261,7 +292,7 @@ body {
 .now-playing {
     position: fixed;
     bottom: 15px;
-    left: 25px;
+    left: 960px;
 }
 
 
@@ -302,4 +333,64 @@ body {
     }
 }
 
+.contact-info {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
 
+    text-align: right;
+    font-size: 14px;
+
+    background: rgba(20, 0, 40, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    padding: 15px 20px;
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 0, 204, 0.3);
+    box-shadow: 0 0 25px rgba(255, 0, 204, 0.25);
+}
+
+.page-404{
+    position: fixed;
+    inset: 0;
+    display: none;              /* скрыто по умолчанию */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.75);
+    z-index: 99999;             /* перекрывает вообще всё */
+}
+
+.page-404-card{
+    width: min(520px, 92vw);
+    padding: 45px 40px;
+    border-radius: 30px;
+    text-align: center;
+
+    background: rgba(20, 0, 40, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 0, 204, 0.3);
+    box-shadow: 0 0 60px rgba(255,0,204,0.3);
+}
+
+.page-404-code{
+    font-size: 96px;
+    font-weight: 800;
+    color: #ff00cc;
+    text-shadow: 0 0 25px rgba(255,0,204,0.9);
+}
+
+.page-404-title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.page-404-text{
+    margin: 15px 0 25px;
+    opacity: 0.85;
+    font-size: 14px;
+}
