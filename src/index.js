@@ -23,7 +23,7 @@ async function runApp() {
         console.log("песни:", track.title);
 
         const popular = await getPopularTrack();
-        console.log("поплурняеы песни:", popular.title);
+        console.log("популярная песня:", popular.title);
 
         const search = await searchTracks("Eminem");
         console.log("найденные результаты:", search.data[0]?.title);
@@ -38,7 +38,7 @@ async function runApp() {
         console.log("библиотека:", library);
 
         await removeTrackFromLibrary(3135556);
-        console.log("песня удалена с библиотеки");
+        console.log("песня удалена из библиотеки");
 
         await clearLibrary();
         console.log("библиотека очистилась");
@@ -50,3 +50,29 @@ async function runApp() {
 }
 
 runApp();
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const page404 = document.getElementById("page404");
+
+    function show404(e) {
+        e?.preventDefault?.();
+        page404.style.display = "flex";
+    }
+
+    function hide404() {
+        page404.style.display = "none";
+    }
+
+    // Закрыть
+    window.hide404 = hide404;
+
+    // что бы работало 404 на все кнопки кроме кнопок внутри 404
+    document.querySelectorAll("button").forEach(btn => {
+        if (!btn.closest("#page404")) {
+            btn.addEventListener("click", show404);
+        }
+    });
+});
