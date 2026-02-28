@@ -1,0 +1,8 @@
+{
+  "name": "misicplayer",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node public/src/index.js"
+  }
+}
